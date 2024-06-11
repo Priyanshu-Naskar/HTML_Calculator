@@ -1,0 +1,62 @@
+body {
+    background-color: #f5ebeb;
+    font-family: 'Bahnschrift';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+textarea, .display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background-color: #fafafa;
+    resize: none;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    font-style: normal;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #ccc;
+    transform: scale(1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
